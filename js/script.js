@@ -149,3 +149,65 @@ console.log(isChecked && isClose); //true if both (all) objects are true
 console.log(isChecked || isClose); //true if one of the objects is true
 
 console.log(isChecked && !isClose); // ! turns boolean type of the object to the opposite (i.e. false to true, and vice versa) */
+
+/*
+if (2*4 == 10) {
+    console.log("Right!");
+} else {
+    console.log("Wrong!");
+};
+
+let num = 50
+
+if (num < 49) {
+    console.log("Wrong!");
+} else if (num > 100) {
+    console.log("Too many!");
+} else {
+    console.log("Right!");
+};
+
+(num == 50) ? console.log("Right!") : console.log("Wrong!");
+
+switch (num) {
+    case num < 49:
+        console.log("Wrong!");
+        break;
+    case num > 100:
+        console.log("Too many!");
+        break;
+    case num > 80:
+        console.log("Still too many!");
+        break;
+    case 50:
+        console.log("Right!");
+        break;
+    default:
+        console.log("Something went wrong!");
+        break;
+};
+*/
+
+// First task
+
+let money = prompt("How much is your monthly budget?", "")
+let time = prompt("Input the date in YYYY-MM-DD format.", "")
+
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    savings: false
+};
+
+let exp_q1_1 = prompt("Enter the required expenditure item for this month.", ""),
+    exp_q1_2 = prompt("How much will it cost?", ""),
+    exp_q2_1 = prompt("Enter the required expenditure item for this month.", ""),
+    exp_q2_2 = prompt("How much will it cost?", "");
+
+appData.expenses[exp_q1_1] = exp_q1_2;
+appData.expenses[exp_q2_1] = exp_q2_2;
+
+alert(appData.budget / 30);
