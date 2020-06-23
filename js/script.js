@@ -380,17 +380,135 @@ if (appData.moneyDaily <= 100) {
 
 // console.log(calcNeww(3,4));
 
-let str = "test";
-console.log(str.length);
+// let str = "test";
+// console.log(str.length);
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
 
-let twelve = "12.7";
+// let twelve = "12.7";
 
-console.log(Math.round(twelve));
+// console.log(Math.round(twelve));
 
-let uno = "12.7px";
+// let uno = "12.7px";
 
-console.log(parseInt(uno));
-console.log(parseFloat(uno));
+// console.log(parseInt(uno));
+// console.log(parseFloat(uno));
+
+// let c = 4
+// function addX(x) {
+//   return function(n) {
+//      return n + x;
+//   }
+// }
+// const addThree = addX(3);
+// console.log(addThree);
+// let d = addThree(c);
+// console.log('example partial application', d);
+
+// function sumAB(a, b) {
+//     return a + b;
+// }
+
+// alert(`1 + 2 = ${sumAB(1, 2)}.`);
+
+// let guestList = `Guests:
+// John
+// Pete
+// Mary`; // these quotes make it possible to break line ``
+// alert(guestList);
+
+// let guestList2 = "Guests:\nJohn\nPete\nMary";
+// alert (guestList2);
+
+// let mma = "Conot \"The Notorious\" \\McGregor";
+// alert(mma); // to use backslash, single or double quotes, add backslash just before the quote or backslash sign
+
+// alert("\uA238 and \u{1F60D}");
+
+// alert(`My\n`.length); // 3, because \n is one symbol
+
+// let rndwrd = `Just do it!`;
+
+// alert(rndwrd[1]);
+// alert(rndwrd[rndwrd.length - 1]); //shows the last symbol
+
+// for (let char of rndwrd) {
+//     alert(char);
+// }
+
+// let word = `Komoji`;
+
+// alert(word.toUpperCase());
+// alert(word.toLowerCase());
+// alert(word[2].toUpperCase());
+
+// let str = `Widget with id`;
+
+// alert(str.indexOf(`Widget`));
+// alert(str.indexOf(`widget`));
+// alert(str.indexOf(`id`)); // first time `id` substring appears in the `Widget`, and in the 1 and 2 positions
+// alert(str.indexOf(`id`, 2)); // second time `id` appearss in the 12 and 13 positions
+
+// let target = `id`;
+// let pos = 0;
+// while (true) {
+//     let foundPos = str.indexOf(target, pos);
+//     if (foundPos == -1) break;
+
+//     alert(`Position is: ${foundPos}`);
+//     pos = foundPos + 1;
+// }
+
+// if (str.indexOf(`Widget`) != -1) {
+//     alert(`There is a matching`);
+// }
+
+// if (~str.indexOf(`Widget`)) {
+//     alert(`There is a matching`);
+// }
+
+// alert(str.includes(`Widget`));
+// alert(str.includes(`widget`));
+// alert(str.includes(`Widget`, 2));
+
+// alert(str.startsWith(`Wi`));
+// alert(str.endsWith(`id`));
+
+// let str = `stringify`;
+
+// alert(str.slice(0, 5)); // does not include 5-symbol, i.e. `g`
+// alert(str.slice(3)); // starts from position 3, i.e `i`, and till the end
+// alert(str.slice(-4, -1)); // does not include -1-symbol, i.e. `y`. Can use negative numbers
+
+// alert(str.substring(2, 6)); // can change positions' places:
+// alert(str.substring(6, 2)); // does not include the greatest position, in this case `6`. Can not use negative numbers
+
+// alert(str.substr(2, 4)); // `4` is the length of the substring, `2` is the position, where the substring begins
+// alert(str.substr(-5, 3)); // the starting position can be a negative number (`-5`)
+
+// let space = `    Spacey    `;
+// alert(space.trim().repeat(3));
+
+
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_SAFE_INTEGER);
+// console.log(Number.MIN_VALUE);
+// console.log(Number.NaN);
+// console.log(Number.NEGATIVE_INFINITY);
+// console.log(Number.POSITIVE_INFINITY);
+// console.log(Number.prototype);
+// console.log(Number.isNaN(NaN));
+// console.log(Number.isFinite(2));
+// console.log(Number.isInteger(234));
+// console.log(Number.EPSILON);
+// console.log(Number.isSafeInteger(2524624614145123));
+// console.log(Number.parseFloat('124.32'));
+// console.log(Number.parseInt('124.32'));
+// console.log(Number.prototype.toExponential(2));
+// console.log(Number.prototype.toFixed(2));
+// console.log(Number.prototype.toLocaleString(121));
+// console.log(Number.prototype.toPrecision(2.4325215));
+// console.log(Number.prototype.toString(30));
+// console.log(Number.prototype.valueOf(22));
