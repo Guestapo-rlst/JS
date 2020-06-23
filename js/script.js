@@ -512,3 +512,90 @@ if (appData.moneyDaily <= 100) {
 // console.log(Number.prototype.toPrecision(2.4325215));
 // console.log(Number.prototype.toString(30));
 // console.log(Number.prototype.valueOf(22));
+
+// function learnJS(lang, callback) {
+//     console.log(`I am learning ` + lang);
+//     callback(); //callback function
+// }
+
+// function done() {
+//     console.log(`I have finished third lesson!`);
+// }
+
+// learnJS(`JS`, done);
+
+// let options = {
+//     width: 1024,
+//     height: 1024,
+//     name: `test`
+// };
+
+// console.log(options.name);
+// options.bool = false;
+// options.colors = {
+//     border: `black`,
+//     bg: `red`
+// };
+
+// delete options.name;
+
+// console.log(options);
+
+// for (let key in options) {
+//     console.log(`Option ` + key + ` has the value of ` + options[key]);
+// }
+// console.log(Object.keys(options).length);
+
+// let arr = [`first`, 2, 3, `four`, 5];
+
+// // arr.pop(); // removes last element of array
+// // arr.push(`6`); // adds value to the end of array
+// // arr.shift(); // removes first element of array
+// // arr.unshift(`0`); // adds value to the beginning of array
+
+// // for (let i = 0; i < arr.length; i++) {
+// //     console.log(arr[i]);
+// // }
+
+// // console.log(arr);
+
+// // arr[20] = 20; // do not do this, it is not right
+// // console.log(arr);
+// // console.log(arr.length);
+
+// arr.forEach(function(item, i, arrName) {
+//     console.log(i + `: ` + item + ` (array: ` + arrName +`)`);
+// });
+
+// console.log(arr);
+
+// let mass = [1, 2, 145, 54, 65];
+
+// for (let key of mass) {
+//     console.log(key); // works only on arrays, strings, map, set, NOT ON OBJECTS
+// }
+
+// let ans = prompt(``, ``),
+//     arr = [];
+
+// arr = ans.split(`,`); // sign in brackets means where to separate the whole given answer into details. In this case commas separate array's elements
+// console.log(arr);
+
+// let arr = [`kjlfjkelwr`, ` jewro`, `qio239`, `iewrjp3`],
+//     i = arr.join(`, `); // joins every element of array into one string, sign in brackets helps to separate each element
+
+// console.log(i);
+
+// let arr = [`n`, `a`, `q`, `z`, `w`, `r`],
+//     i = arr.sort(); // sorts alphabetically, or by the first digit of a number, e.g.: 1 and then 14 and then 2
+
+// console.log(arr);
+
+// let arr = [1, 34, 3, 21, 2, 15],
+//     i = arr.sort(compareNum);
+
+// function compareNum(a,b) {
+//     return a - b;
+// }
+
+// console.log(arr);
