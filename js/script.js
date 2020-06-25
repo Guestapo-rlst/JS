@@ -599,3 +599,84 @@ if (appData.moneyDaily <= 100) {
 // }
 
 // console.log(arr);
+
+// let soldier = {
+//     health: 400,
+//     armor: 100
+// };
+
+// let john = {
+//     health: 100
+// };
+
+// john.__proto__ = soldier;
+
+// console.log(john);
+// console.log(john.armor);
+
+/* // created very simple calculator. Object oriented programming. New object as function, with 3 methods: `read`, `sum`, `mul`
+// this means that I turned function `Calculator` to object `calcu`.
+// to create any function, which you would like to be an object, the name of the function should begin with capital letter.
+// to run this function you need to write `new` before you call the function, i.e.: `new Calculator()`
+
+
+function Calculator() {
+    this.read = function() {
+      this.a = +prompt(`Enter first number: `, ``);
+      this.b = +prompt(`Enter second number: `, ``);
+    }
+  
+    this.sum = function() {
+      return this.a + this.b;
+    }
+  
+    this.mul = function() {
+      return this.a * this.b;
+    }
+  }
+  
+  let calcu = new Calculator();
+  calcu.read();
+  
+  alert(`The sum is: ` + calcu.sum());
+  alert(`The multiplication is: ` + calcu.mul());
+*/
+
+/* // Object Oriented Programming, simple accumulator object as function, and with method `read`
+
+function Accumulator(value) {
+  this.value = value;
+  
+  this.read = function() {
+    let entered = +prompt(`Add an extra number:`, ``);
+    this.value += entered;
+  }
+}
+
+let accumulator = new Accumulator(1);
+
+accumulator.read();
+accumulator.read();
+
+alert(`The value is now: ` + accumulator.value);
+*/
+
+/* // rewriting `accumulator` using `Class`, because `Class` is more clean and understandable, and methods are not the elements of the resulting object
+
+class Accumulator {
+    constructor(value) {
+        this.value = value;
+    }
+
+    read() {
+        this.value += +prompt(`Add an extra value: `, ``);
+    }
+}
+
+let accumulator = new Accumulator(1);
+
+accumulator.read();
+accumulator.read();
+
+alert(`The value is now: ` + accumulator.value);
+*/
