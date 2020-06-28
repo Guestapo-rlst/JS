@@ -680,3 +680,58 @@ accumulator.read();
 
 alert(`The value is now: ` + accumulator.value);
 */
+
+/* to find errors click F12, then go to sources, go to file, and if you want to inspect a line of code, you should add a breakpoint, and REFRESH page
+let ar = [3, 15, 4, 30, 42],
+    i = arr.sort(compareNum);
+
+function compareNum(a,b) {
+    return a-b;
+}
+
+console.log(arr);
+*/
+
+let box = document.getElementById(`box`),
+    btn = document.getElementsByTagName('button'),
+    circle = document.getElementsByClassName(`circle`),
+    heart = document.querySelectorAll(`.heart`),
+    daughter = document.querySelectorAll(`body .heart`),
+    oneHeart = document.querySelector(`.heart`), // refers to the first element with this class (id, tag, attribute)
+    wrapper = document.querySelector(`.wrapper`);
+
+box.style.backgroundColor = `blue`;
+btn[1].style.borderRadius = `100%`;
+
+circle[0].style.backgroundColor = `red`;
+circle[1].style.backgroundColor = `yellow`;
+circle[2].style.backgroundColor = `green`;
+
+// for (let i = 0; i < heart.length; i++) {
+//     heart[i].style.backgroundColor = `blue`;
+// }
+
+// heart.forEach(function(item, i, hearts) {
+//     item.style.backgroundColor = `blue`;
+// }) // does the same thing as `for` loop above
+
+let div = document.createElement(`div`),
+    text = document.createTextNode(`Hello, world!`);
+
+div.classList.add(`black`);
+
+
+// div.innerHTML = `<h1>Hello, world!</h1>`; // adds `h1` inside `div` variable (changes HTML code)
+div.textContent = `Hello, world!`; // adds only text to the `div` variable
+
+
+// document.body.appendChild(div); // adds `div` (variable) to the end of `body`
+// wrapper.appendChild(div); // adds `div` (variable) to the end of the element (variable) `wrapper`
+document.body.insertBefore(div, circle[0]); // adds `div` before first `circle`
+
+document.body.removeChild(circle[1]); // removes second `circle`
+wrapper.removeChild(heart[1]); // removes second daughter element of `wrapper` - `heart`
+document.body.replaceChild(btn[1], circle[1]); // inside body: second `btn` goes to the new place, replacing second `circle`
+
+console.log(div);
+console.log(text);
