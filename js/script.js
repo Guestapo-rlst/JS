@@ -735,3 +735,123 @@ console.log(arr);
 
 // console.log(div);
 // console.log(text);
+
+// let btn = document.querySelectorAll('button'),
+//     wrap = document.querySelector(`.wrapper`),
+//     link = document.querySelector(`a`);
+
+// // btn[0].onclick = function() {
+// //     alert(`You clicked first button`);
+// // };
+
+// // btn[0].onclick = function() {
+// //     alert(`You clicked first button again`);
+// // };
+
+// // btn[0].addEventListener(`click`, function() {
+// //     alert(`You clicked first button`);
+// // });
+
+// // btn[0].addEventListener(`click`, function() {
+// //     alert(`You clicked first button again`);
+// // });
+
+// // btn[0].addEventListener(`mouseenter`, function() {
+// //     alert(`You clicked first button`);
+// // });
+
+// // btn[0].addEventListener(`click`, function(event) {
+// //     console.log(event);
+// //     let target = event.target;
+// //     target.style.display = `none`;
+// //     // console.log(event.type + ` event has just happened on element ` + event.target);
+// // });
+
+// wrap.addEventListener(`click`, function() {
+//     console.log(event.type + ` event has just happened on element ` + event.target);
+// });
+
+// link.addEventListener(`click`, function(event) {
+//     event.preventDefault();
+//     console.log(event.type + ` event has just happened on element ` + event.target);
+// });
+
+// btn.forEach(function(item) {
+//     item.addEventListener(`mouseleave`, function() {
+//         console.log(`Left!`);
+//     });
+// });
+
+// Events for mobile device users:
+// touchstart - works when user taps device's screen
+// touchmove - works when user's finger touches the screen, holds and moves
+// touchend - works when user removes a finger from the screen
+// click also works on mobiles
+// touchenter - when a finger enters on some element on page
+// touchleave - when a finger leaves some element on page
+// touchcancel - when a finger leaves entire page
+
+window.addEventListener(`DOMContentLoaded`, function() {
+    let box = document.querySelector(`.box`);
+
+    // box.addEventListener(`touchstart`, function(event) {
+    //     event. preventDefault();
+    //     console.log(`Red box: touchstart`);
+    //     console.log(event.target); // get interacting element
+    //     console.log(event.touches[0].target); // [0] is the user's first finger
+    //     console.log(event.touches); // we get all fingers which used on any elements to run event
+    //     console.log(event.changedTouches); // the same as previous
+    //     console.log(event.targetTouches); // only gets those fingers, that interact with that `target` element 
+    // });
+
+    box.addEventListener(`touchmove`, function(event) {
+        event. preventDefault();
+        console.log(`Red box: ` + event.touches[0].pageX);
+    });
+
+    // box.addEventListener(`touchend`, function(event) {
+    //     event. preventDefault();
+    //     console.log(`Red box: touchend`);
+    // });
+
+    //regular expressions:
+    // new RegExp(`pattern`, `flags`);
+    // /pattern/
+
+    // let ans = prompt(`Enter your name`);
+
+    // let reg = /n/gi; // a letter 'n' (which is a pattern) with flags `i` and `g`
+
+    // // // console.log(ans.search(reg)); // search inside `ans` a letter `n`. `search()` finds only first occurrence of `n` letter. Flag `g` does not work here
+    // // console.log(ans.match(reg)); // get array with all occurrences. Works with `g` flag
+    // console.log(reg.test(ans)); // checks if regular expression (in this case a letter `n`) occurs in ans, and if it is, then returns true
+
+    // flags:
+    // i - find somenthing regardless of case (uppercase and lowercase)
+    // g - global. Find all occurrences, not only the first
+    // m
+
+    // classes of flags:
+    // \d - search all digits
+    // \D - search anything but digits
+    // \w - search all letters
+    // \W - search anything but letters
+    // \s - search all spaces
+    // \S - search anything but spaces
+
+    // let ans = prompt(`Enter a number`);
+
+    // let reg = /\d/g; // search for all occurrences of digits in the answer
+
+    // console.log(ans.match(reg));
+
+    let str = `My name is/ R2D2`;
+
+    console.log(str.match(/\w\d\w\d/i)); // search anything that contains a letter, a number, a letter, a number in the given order (in our case this is R2D2). Flag `i` makes it case-unsensitive
+    console.log(str.match(/\//)); // search for `/` symbol (pattern). Should add backslash before it (`\/`)
+
+    // let pass = prompt(`Enter a password`);
+
+    // console.log(pass.replace(/./g, `*`)); // pattern `/./` means that we get all symbols of a string
+    // alert(`12-34-56`.replace(/-/g, `:`)); // method `replace()` replaces all `-` symbols with colons (:)
+});
